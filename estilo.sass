@@ -25,6 +25,9 @@ header
     background-color: $color2
     z-index: 3
 
+.menuDesktop
+    display: none
+
 nav
     background-color: $color2
     display: flex
@@ -621,9 +624,19 @@ $redesHover: (fa-youtube: #c4302b, fa-facebook-square: #3b5998, fa-twitter: #00a
         grid-row: 6/8
         align-self: center
 
+/* Desktop */
+
 @media screen and (min-width: 992px)
     .tituloPrincipal
         margin-top: 13rem
+    .menuDesktop
+        display: inline-block
+        margin-left: 1rem
+        opacity: 1
+        text-transform: uppercase
+        font-weight: bold
+        text-shadow: 0 0 3px $color1
+        color: $color1
     .navbar-collapse
         background-color: $color2
         font-size: 1.2rem
@@ -632,11 +645,16 @@ $redesHover: (fa-youtube: #c4302b, fa-facebook-square: #3b5998, fa-twitter: #00a
         display: block
         padding: 0
         opacity: 0
-        transition: 0.3s ease-in-out
+        transition: 0.3s ease-in
     .navbar-nav i
         display: none
     .navbar:hover .nav-link, .navbar:hover .navbar-nav span
         opacity: 1
+    nav .active
+        font-weight: bold
+        text-shadow: 0 0 3px $color1
+    .navbar:hover .menuDesktop
+        display: none
     h1
         font-size: 2.4rem
     h2
