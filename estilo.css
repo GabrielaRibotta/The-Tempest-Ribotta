@@ -59,6 +59,7 @@ nav .container-fluid {
   border: none;
   outline: none;
   transform: rotateY(180deg);
+  animation-iteration-count: 1;
 }
 .navbar-toggler:hover i {
   color: #3b3434;
@@ -620,6 +621,7 @@ footer p {
   }
   .bienvenidos p {
     grid-area: texto;
+    margin-left: 2rem;
   }
   .bienvenidos img {
     grid-area: img;
@@ -662,6 +664,7 @@ footer p {
   }
   .mapa p {
     grid-area: texto;
+    margin-right: 2rem;
   }
   .galeria2003, .galeria2004, .galeria2005 {
     grid-template-columns: 1fr 1fr 1fr;
